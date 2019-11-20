@@ -2,9 +2,9 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>hello word | </title>
+<title>网站快速支持自动切换暗黑模式和日常模式 | </title>
 <meta name="description" content="" />
-<link rel="shortcut icon" href="https://maxbee.github.io/favicon.ico?v=1574219038073">
+<link rel="shortcut icon" href="https://maxbee.github.io/favicon.ico?v=1574219689487">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://maxbee.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://maxbee.github.io">
-  <img class="avatar" src="https://maxbee.github.io/images/avatar.png?v=1574219038073" alt="">
+  <img class="avatar" src="https://maxbee.github.io/images/avatar.png?v=1574219689487" alt="">
   </a>
   <h1 class="site-title">
     
@@ -73,7 +73,7 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              hello word
+              网站快速支持自动切换暗黑模式和日常模式
             </h2>
             <div class="post-info">
               <span>
@@ -87,7 +87,22 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>第一篇博文</p>
+                <p>只需要在CSS添加以下代码即可：</p>
+<pre><code>@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #444;
+    color: #e4e4e4;
+  }
+  a {
+    color: #e39777;
+  }
+  img {
+    filter: grayscale(30%);
+  }
+}
+</code></pre>
+<p>支持Firefox, Safari, Chrome浏览器</p>
+<p><a href="%5Bhttps://tombrow.com/dark-mode-website-css%5D(https://tombrow.com/dark-mode-website-css)">参考来源</a></p>
 
               </div>
               <div class="toc-container">
@@ -97,15 +112,6 @@
           </article>
         </div>
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://maxbee.github.io/post/hello-gridea">
-              <h3 class="post-title">
-                Hello Gridea
-              </h3>
-            </a>
-          </div>
         
 
         
