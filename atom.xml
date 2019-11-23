@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maxbee.github.io</id>
     <title></title>
-    <updated>2019-11-23T05:54:47.974Z</updated>
+    <updated>2019-11-23T16:03:12.503Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maxbee.github.io"/>
     <link rel="self" href="https://maxbee.github.io/atom.xml"/>
@@ -10,6 +10,33 @@
     <logo>https://maxbee.github.io/images/avatar.png</logo>
     <icon>https://maxbee.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, </rights>
+    <entry>
+        <title type="html"><![CDATA[各相机品牌镜头卡口类型]]></title>
+        <id>https://maxbee.github.io/post/ge-xiang-ji-pin-pai-jing-tou-qia-kou-lei-xing</id>
+        <link href="https://maxbee.github.io/post/ge-xiang-ji-pin-pai-jing-tou-qia-kou-lei-xing">
+        </link>
+        <updated>2019-11-23T15:30:25.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>以下并非全部卡口类型</p>
+</blockquote>
+<hr>
+<h3 id="佳能ef卡口">佳能：EF卡口</h3>
+<p>卡口环内直径：54.0 mm<br>
+适用于EOS系列单反全画幅和APS-C画幅相机</p>
+<h3 id="尼康f卡口">尼康：F卡口</h3>
+<p>卡口内直径：47.0 mm<br>
+适用于尼康单反全幅和APS-C画幅相机</p>
+<h3 id="索尼efe卡口">索尼：E/FE卡口</h3>
+<p>卡口环直径：46.1mm<br>
+适用于索尼微单全幅和APS-C画幅相机</p>
+<h3 id="宾得k卡口">宾得：K卡口</h3>
+<p>卡口环直径：48.0 mm<br>
+适用于宾得全幅和APS-C画幅相机</p>
+<h3 id="富士x卡口">富士：X卡口</h3>
+<p>卡口环直径：43.5 mm<br>
+适用于富士APS-C画幅相机</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[摄影笔记（1）]]></title>
         <id>https://maxbee.github.io/post/she-ying-bi-ji-1</id>
