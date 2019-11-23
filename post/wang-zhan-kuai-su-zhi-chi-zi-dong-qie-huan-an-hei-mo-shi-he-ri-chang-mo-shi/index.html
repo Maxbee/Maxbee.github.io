@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title></title>
+<title>网站快速支持自动切换暗黑模式和日常模式 | </title>
 <meta name="description" content="Never Complain" />
 <link rel="shortcut icon" href="https://maxbee.github.io/favicon.ico?v=1574488037102">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -70,67 +70,82 @@
   </div>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://maxbee.github.io/post/she-ying-bi-ji-1">
-        <h2 class="post-title">摄影笔记（1）</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-21
-        </span>
-        <span>
-          5 min read
-        </span>
-        
-          <a href="https://maxbee.github.io/tag/photography" class="post-tag">
-            # 摄影
-          </a>
-        
-      </div>
-      
-        <a href="https://maxbee.github.io/post/she-ying-bi-ji-1" class="post-feature-image" style="background-image: url('https://maxbee.github.io/post-images/she-ying-bi-ji-1.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://maxbee.github.io/post/wang-zhan-kuai-su-zhi-chi-zi-dong-qie-huan-an-hei-mo-shi-he-ri-chang-mo-shi">
-        <h2 class="post-title">网站快速支持自动切换暗黑模式和日常模式</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-11-20
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://maxbee.github.io/tag/front" class="post-tag">
-            # 前端
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-</div>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              网站快速支持自动切换暗黑模式和日常模式
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-11-20
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://maxbee.github.io/tag/front" class="post-tag">
+                  # 前端
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>只需要在CSS添加以下代码即可：</p>
+<pre><code>@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #444;
+    color: #e4e4e4;
+  }
+  a {
+    color: #e39777;
+  }
+  img {
+    filter: grayscale(30%);
+  }
+}
+</code></pre>
+<p>支持Firefox, Safari, Chrome浏览器</p>
+<p><a href="%5Bhttps://tombrow.com/dark-mode-website-css%5D(https://tombrow.com/dark-mode-website-css)">参考来源</a></p>
 
-    
-        <div class="pagination-container">
-  
-  
-</div>
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
 
-    
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
         <div class="site-footer">
    | 
   <a class="rss" href="https://maxbee.github.io/atom.xml" target="_blank">RSS</a>
@@ -178,7 +193,6 @@
 </script>
 
       </div>
-      
     </div>
   </body>
 </html>
