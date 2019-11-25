@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maxbee.github.io</id>
     <title></title>
-    <updated>2019-11-23T16:06:51.701Z</updated>
+    <updated>2019-11-25T15:07:15.797Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maxbee.github.io"/>
     <link rel="self" href="https://maxbee.github.io/atom.xml"/>
@@ -28,7 +28,8 @@
 适用于尼康单反全幅和APS-C画幅相机</p>
 <h3 id="索尼efe卡口">索尼：E/FE卡口</h3>
 <p>卡口环直径：46.1mm<br>
-适用于索尼微单全幅和APS-C画幅相机</p>
+适用于索尼微单全幅和APS-C画幅相机<br>
+索尼E卡口镜头是为索尼微单而准备的，带有FE标识的E卡口镜头是可以通用于全画幅微单和APS画幅微单的，而没有FE标识的E卡口镜头，只能用于索尼APS画幅微单。</p>
 <h3 id="宾得k卡口">宾得：K卡口</h3>
 <p>卡口环直径：48.0 mm<br>
 适用于宾得全幅和APS-C画幅相机</p>
