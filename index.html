@@ -7,7 +7,7 @@
 <title>
     
 </title>
-<link rel="shortcut icon" href="https://maxbee.github.io/favicon.ico?v=1587959854928">
+<link rel="shortcut icon" href="https://maxbee.github.io/favicon.ico?v=1587969217504">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -27,7 +27,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://maxbee.github.io">
-                <img class="avatar" src="https://maxbee.github.io/images/avatar.png?v=1587959854928" alt="">
+                <img class="avatar" src="https://maxbee.github.io/images/avatar.png?v=1587969217504" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -99,6 +99,43 @@
         
             <article class="post i-card">
                 <h2 class="post-title">
+                    <a href="https://maxbee.github.io/post/gridea-pei-zhi-gitalk-ping-lun-xi-tong/">
+                        Gridea配置Gitalk评论系统
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2020-04-27</time>
+                    
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件，可以使用GitHub账号进行登录。
+Gridea官方文档中并没有对Gitalk评论进行配置对教程，搜索了一番把自己对小站支持了一番Gitalk。其实步骤很简单，不过在配置的过程中有一些我们需要注意的地方，话不多说，直接上教程。
+第一步
+首先，需要在GitHub账号设置里配置一个OAuth Application  地址点击这里 如图：
+
+第二步
+
+⚠️需要注意的是HomePage和Authorization callback URL需要填写https而不是http
+
+配置完成后，会获得Client ID 和Client Secret，打开Gridea远程设置中配置，如下图：
+
+配置完成后保存并且把网站发布即可，如果出现「***issue暂未配置，请联系@xxx 配置」是因为你的部署站点的Git仓库未打开issue，在仓库中把issue打开即可。（具体设置在仓库setting中设置）
+
+如果还有不懂的地方，可以在下方的评论告诉我😋
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://maxbee.github.io/post/gridea-pei-zhi-gitalk-ping-lun-xi-tong/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
                     <a href="https://maxbee.github.io/post/jian-shen-san-da-she-ru-dan-bai-zhi-tan-shui-hua-he-wu-zhi-fang/">
                         健身三大摄入 -- 蛋白质、碳水化合物、脂肪 
                     </a>
@@ -107,7 +144,7 @@
                     <time class="post-time">2020-04-21</time>
                     
                         <a href="https://maxbee.github.io/tag/life/" class="post-tag i-tag
-                            i-tag-other_1">
+                            i-tag-primary">
             #生活
         </a>
                         
@@ -157,7 +194,7 @@
                     <time class="post-time">2019-12-31</time>
                     
                         <a href="https://maxbee.github.io/tag/life/" class="post-tag i-tag
-                            i-tag-success">
+                            i-tag-warning">
             #生活
         </a>
                         
@@ -244,7 +281,7 @@
                     <time class="post-time">2019-12-22</time>
                     
                         <a href="https://maxbee.github.io/tag/photography/" class="post-tag i-tag
-                            i-tag-primary">
+                            i-tag-other_2">
             #摄影
         </a>
                         
@@ -277,7 +314,7 @@
                     <time class="post-time">2019-11-23</time>
                     
                         <a href="https://maxbee.github.io/tag/photography/" class="post-tag i-tag
-                            i-tag-">
+                            i-tag-error">
             #摄影
         </a>
                         
@@ -330,7 +367,7 @@
                     <time class="post-time">2019-11-21</time>
                     
                         <a href="https://maxbee.github.io/tag/photography/" class="post-tag i-tag
-                            i-tag-info">
+                            i-tag-banana">
             #摄影
         </a>
                         
@@ -393,7 +430,7 @@ ISO感光度
                     <time class="post-time">2019-11-20</time>
                     
                         <a href="https://maxbee.github.io/tag/front/" class="post-tag i-tag
-                            i-tag-warning">
+                            i-tag-primary">
             #前端
         </a>
                         
@@ -438,7 +475,7 @@ ISO感光度
                     <!-- 个人信息 -->
                     
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://maxbee.github.io/images/avatar.png?v=1587959854928)">
+        <div class="id_card-avatar" style="background-image: url(https://maxbee.github.io/images/avatar.png?v=1587969217504)">
         </div>
         <h1 class="id_card-title">
             

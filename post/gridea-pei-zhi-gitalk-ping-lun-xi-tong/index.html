@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    拍摄前的一些准备 | 
+    Gridea配置Gitalk评论系统 | 
 </title>
 <link rel="shortcut icon" href="https://maxbee.github.io/favicon.ico?v=1587969217504">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -106,23 +106,28 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            拍摄前的一些准备
+                            Gridea配置Gitalk评论系统
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2019-12-22</time>
+                            <time class="post-time">2020-04-27</time>
                             
-                                <a href="https://maxbee.github.io/tag/photography/" class="post-tag i-tag
-                            i-tag-other_3">
-                            #摄影
-                        </a>
-                                
                         </div>
                         
-                            <div class="post-feature-image" style="background-image: url('https://wx2.sinaimg.cn/mw690/6a20e7e9ly1ga5wmvu0msj213t0u0x6p.jpg')"></div>
-                            
                                 <div class="post-content">
-                                    <p><img src="https://wx4.sinaimg.cn/mw690/6a20e7e9ly1ga5w98k3chj20u00vfqv6.jpg" alt="" loading="lazy"><br>
-鉴于上周出去拍了一些图片自我感觉还不错,今天打算再接再厉。出门前一切都计划得很顺利很周全，场景在网上查过了，想要拍摄得风格也都想清楚了，一切都是想象中那样美丽。时间到点就出发去场地了，到达场地后才发现是这次拍摄得噩梦，给我深深的上了一课。因为场地太大了，而且位置也不是我预想中那样，前前后后走了差不多一个小时都没找到场地。我计划是两点多到达场地，五点多太阳落山下午的阳光恰好可以拍两个多小时，但是我万万没预算要找场地那么久，找到场地的时候阳光已经很弱了，所以也没能拍到什么光影比较好的照片，可以说今天出去拍照真是一踏涂地，拍的照片也很不好看。但是也并不是没有收获的，作为一名新手摄影师这些也是我成长的必经之路。这次的经历让我意识到冬天的日落比较早，即使是算计好太阳落山时间，也不能压轴的去安排时间，五点多日落其实在四点钟左右阳光强度已经不是很强烈了，不过也有可能是今天天气稍微表多云的原因。其次提前到场找好场地也是重要事项之一，这可以让你提前了解场地，观察光线的位置，拍摄的时候可以提前做准备，不要像今天一样把时间都浪费在找场地了，其实今天的场地还是不错的，很有感觉，非常可惜，希望下次把摄影学好点了再去拍一次，不想每次都去同一个场地拍摄。<img src="https://maxbee.github.io/post-images/1577029265572.jpg" alt="" loading="lazy"></p>
+                                    <p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件，可以使用GitHub账号进行登录。</p>
+<p>Gridea官方文档中并没有对Gitalk评论进行配置对教程，搜索了一番把自己对小站支持了一番Gitalk。其实步骤很简单，不过在配置的过程中有一些我们需要注意的地方，话不多说，直接上教程。</p>
+<h3 id="第一步">第一步</h3>
+<p>首先，需要在GitHub账号设置里配置一个OAuth Application  <a href="https://github.com/settings/applications/new">地址点击这里</a> 如图：<br>
+<img src="https://maxbee.github.io/post-images/1587968143347.jpg" alt="" loading="lazy"></p>
+<h3 id="第二步">第二步</h3>
+<blockquote>
+<p>⚠️需要注意的是HomePage和Authorization callback URL需要填写https而不是http</p>
+</blockquote>
+<p>配置完成后，会获得<strong>Client ID</strong> 和<strong>Client Secret</strong>，打开Gridea远程设置中配置，如下图：<br>
+<img src="https://maxbee.github.io/post-images/1587968672034.jpg" alt="" loading="lazy"></p>
+<p>配置完成后保存并且把网站发布即可，如果出现「***issue暂未配置，请联系@xxx 配置」是因为你的部署站点的Git仓库未打开issue，在仓库中把issue打开即可。（具体设置在仓库setting中设置）<br>
+<img src="https://maxbee.github.io/post-images/1587969053995.jpg" alt="" loading="lazy"></p>
+<p>如果还有不懂的地方，可以在下方的评论告诉我😋</p>
 
                                 </div>
                     </article>
@@ -130,9 +135,9 @@
                     
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://maxbee.github.io/post/ge-xiang-ji-pin-pai-jing-tou-qia-kou-lei-xing/">
+                            <a href="https://maxbee.github.io/post/jian-shen-san-da-she-ru-dan-bai-zhi-tan-shui-hua-he-wu-zhi-fang/">
                                 <h3 class="post-title">
-                                    各相机品牌镜头卡口类型
+                                    健身三大摄入 -- 蛋白质、碳水化合物、脂肪 
                                 </h3>
                             </a>
                         </div>
@@ -145,32 +150,51 @@
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://maxbee.github.io/images/avatar.png?v=1587969217504)">
-        </div>
-        <h1 class="id_card-title">
-            
-        </h1>
-        <h2 class="id_card-description">
-            Never Complain
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E6%AD%A5">第一步</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5">第二步</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-                                    
+                            
 
                 </div>
 

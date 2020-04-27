@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maxbee.github.io</id>
     <title></title>
-    <updated>2020-04-27T03:57:36.380Z</updated>
+    <updated>2020-04-27T06:33:42.849Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maxbee.github.io"/>
     <link rel="self" href="https://maxbee.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://maxbee.github.io/images/avatar.png</logo>
     <icon>https://maxbee.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, </rights>
+    <entry>
+        <title type="html"><![CDATA[Gridea配置Gitalk评论系统]]></title>
+        <id>https://maxbee.github.io/post/gridea-pei-zhi-gitalk-ping-lun-xi-tong/</id>
+        <link href="https://maxbee.github.io/post/gridea-pei-zhi-gitalk-ping-lun-xi-tong/">
+        </link>
+        <updated>2020-04-27T06:06:02.000Z</updated>
+        <content type="html"><![CDATA[<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件，可以使用GitHub账号进行登录。</p>
+<p>Gridea官方文档中并没有对Gitalk评论进行配置对教程，搜索了一番把自己对小站支持了一番Gitalk。其实步骤很简单，不过在配置的过程中有一些我们需要注意的地方，话不多说，直接上教程。</p>
+<h3 id="第一步">第一步</h3>
+<p>首先，需要在GitHub账号设置里配置一个OAuth Application  <a href="https://github.com/settings/applications/new">地址点击这里</a> 如图：<br>
+<img src="https://maxbee.github.io/post-images/1587968143347.jpg" alt="" loading="lazy"></p>
+<h3 id="第二步">第二步</h3>
+<blockquote>
+<p>⚠️需要注意的是HomePage和Authorization callback URL需要填写https而不是http</p>
+</blockquote>
+<p>配置完成后，会获得<strong>Client ID</strong> 和<strong>Client Secret</strong>，打开Gridea远程设置中配置，如下图：<br>
+<img src="https://maxbee.github.io/post-images/1587968672034.jpg" alt="" loading="lazy"></p>
+<p>配置完成后保存并且把网站发布即可，如果出现「***issue暂未配置，请联系@xxx 配置」是因为你的部署站点的Git仓库未打开issue，在仓库中把issue打开即可。（具体设置在仓库setting中设置）<br>
+<img src="https://maxbee.github.io/post-images/1587969053995.jpg" alt="" loading="lazy"></p>
+<p>如果还有不懂的地方，可以在下方的评论告诉我😋</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[健身三大摄入 -- 蛋白质、碳水化合物、脂肪 ]]></title>
         <id>https://maxbee.github.io/post/jian-shen-san-da-she-ru-dan-bai-zhi-tan-shui-hua-he-wu-zhi-fang/</id>
