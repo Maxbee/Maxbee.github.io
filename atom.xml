@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://maxbee.github.io</id>
+    <id>http://localhost:4000</id>
     <title></title>
-    <updated>2020-04-27T06:35:58.267Z</updated>
+    <updated>2020-04-27T06:39:26.344Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://maxbee.github.io"/>
-    <link rel="self" href="https://maxbee.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>Never Complain</subtitle>
-    <logo>https://maxbee.github.io/images/avatar.png</logo>
-    <icon>https://maxbee.github.io/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2020, </rights>
     <entry>
         <title type="html"><![CDATA[Gridea配置Gitalk评论系统]]></title>
-        <id>https://maxbee.github.io/post/gridea-pei-zhi-gitalk-ping-lun-xi-tong/</id>
-        <link href="https://maxbee.github.io/post/gridea-pei-zhi-gitalk-ping-lun-xi-tong/">
+        <id>http://localhost:4000/post/gridea-pei-zhi-gitalk-ping-lun-xi-tong/</id>
+        <link href="http://localhost:4000/post/gridea-pei-zhi-gitalk-ping-lun-xi-tong/">
         </link>
         <updated>2020-04-27T06:06:02.000Z</updated>
         <content type="html"><![CDATA[<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件，可以使用GitHub账号进行登录。</p>
 <p>Gridea官方文档中并没有对Gitalk评论进行配置对教程，搜索了一番把自己对小站支持了一番Gitalk。其实步骤很简单，不过在配置的过程中有一些我们需要注意的地方，话不多说，直接上教程。</p>
 <h3 id="第一步">第一步</h3>
 <p>首先，需要在GitHub账号设置里配置一个OAuth Application  <a href="https://github.com/settings/applications/new">地址点击这里</a> 如图：<br>
-<img src="https://maxbee.github.io/post-images/1587968143347.jpg" alt="" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1587968143347.jpg" alt="" loading="lazy"></p>
 <h3 id="第二步">第二步</h3>
 <blockquote>
 <p>⚠️需要注意的是HomePage和Authorization callback URL需要填写https而不是http</p>
 </blockquote>
 <p>配置完成后，会获得<strong>Client ID</strong> 和<strong>Client Secret</strong>，打开Gridea远程设置中配置，如下图：<br>
-<img src="https://maxbee.github.io/post-images/1587968672034.jpg" alt="" loading="lazy"></p>
-<p>配置完成后保存并且把网站发布即可，如果出现「***issue暂未配置，请联系@xxx 配置」是因为你的部署站点的Git仓库未打开issue，在仓库中把issue打开即可。（具体设置在仓库setting中设置）<br>
-<img src="https://maxbee.github.io/post-images/1587969053995.jpg" alt="" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1587968672034.jpg" alt="" loading="lazy"></p>
+<p>配置完成后保存并且把网站发布即可，发布后请用部署的地址访问网站而不是本地预览，否则会出现「<strong>未找到相关的 Issues 进行评论请联系 @_____ 初始化创建</strong>」的提示。还有一个原因是因为你的部署站点的Git仓库未打开issue，在仓库中把issue打开即可。（具体设置在仓库setting中设置）<br>
+<img src="http://localhost:4000/post-images/1587969053995.jpg" alt="" loading="lazy"></p>
 <p>如果还有不懂的地方，可以在下方的评论告诉我😋</p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[健身三大摄入 -- 蛋白质、碳水化合物、脂肪 ]]></title>
-        <id>https://maxbee.github.io/post/jian-shen-san-da-she-ru-dan-bai-zhi-tan-shui-hua-he-wu-zhi-fang/</id>
-        <link href="https://maxbee.github.io/post/jian-shen-san-da-she-ru-dan-bai-zhi-tan-shui-hua-he-wu-zhi-fang/">
+        <id>http://localhost:4000/post/jian-shen-san-da-she-ru-dan-bai-zhi-tan-shui-hua-he-wu-zhi-fang/</id>
+        <link href="http://localhost:4000/post/jian-shen-san-da-she-ru-dan-bai-zhi-tan-shui-hua-he-wu-zhi-fang/">
         </link>
         <updated>2020-04-21T08:31:58.000Z</updated>
         <content type="html"><![CDATA[<h3 id="蛋白质">蛋白质</h3>
@@ -64,8 +64,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[它走了，它来了。]]></title>
-        <id>https://maxbee.github.io/post/ta-zou-liao-ta-lai-liao/</id>
-        <link href="https://maxbee.github.io/post/ta-zou-liao-ta-lai-liao/">
+        <id>http://localhost:4000/post/ta-zou-liao-ta-lai-liao/</id>
+        <link href="http://localhost:4000/post/ta-zou-liao-ta-lai-liao/">
         </link>
         <updated>2019-12-31T12:10:04.000Z</updated>
         <content type="html"><![CDATA[<p>题图: Photography by: Jeshu John</p>
@@ -80,7 +80,7 @@
 <p>说到装备，今年着实败家了不少钱在电子设备上面，先是年初藉着工作+运行软件更快的名义，更新了我的MacBook Air，购入了MacBook Pro 16G 512GB。除此之外，还购入了HomePod、Apple Watch 4、iPhone XR、AirPods 2、Magic Mouse 2、三星 T5 500G固态硬盘、富士拍立得2s ，可以看得出我大部分的零花钱都花在电子设备上了，并且🍎占据了大部分。还有其他乱七八糟的败家就不说了，不是日常的电子产品一时间也想不起来。在计划内2020年会购入一台相机以及我期待的iPhone 12，希望零花钱能花在其他地方而不是电子产品上。</p>
 <h4 id="健康">健康</h4>
 <p>为了让自己的身体保持活力，早上起床的时候能充满活力，在九月份的时候决定把跑步加入每周计划，一不小心四个月过去了，跑了20次，平均每周都有一次运动，总距离也达到了55公里。2020年看看能不能挑战100次，平均下来每周跑两次就能达到目标了。稍微下点决心这个应该问题不大。<br>
-<img src="https://maxbee.github.io/post-images/1577797716538.jpeg" alt="" loading="lazy"></p>
+<img src="http://localhost:4000/post-images/1577797716538.jpeg" alt="" loading="lazy"></p>
 <h4 id="展望-2020的计划">展望 &amp; 2020的计划</h4>
 <p>2020年是实现小康社会的一年，我很有信心的一年，我觉得在这一年我会有比较大的改变，虽然短时间内看，2020年头几个月可能会有点不太顺畅，新的一年我打算换一家公司继续我的打工生涯，或许还会搬迁新的居住环境，这要看我最终的工作地点，这些都是一些繁琐事。还准备用一年的时间去提升我在拍摄方面的技能，投入1w+购入新的摄影设备，期待它能成为我第二个职业，隔行如隔山，学习新技能很不容易，但对我来说能不能把它学好，是我对自己的认知及认可，我给自己很大的期望，如果一年后对于摄影我还没有足够多的产出，对于其他事情， 或许我也做不好。2020年可预见的是，我会拥有第一辆属于我自己的小汽车，在几天前我很意外的收到了摇号中招的短信通知，指标有效期一年。whatever，我的一只脚已经跨进2020年，期待它的来临。</p>
 <p>得益于最近阅读了一本关于时间管理的书籍的书，我了解了学习规划目标的重要性，除了规划目标还要考虑回报，同时要有预期回报，即是产出。很多人每年都会规划目标，却很少提及实现的时间，以及要达到的预期。学习的目的是产出，没有产出的学习毫无意义。所以今年的每个目标计划我都会分为计划-总结-产出三个阶段，将每个目标都分阶段完成并考核预期效果。</p>
@@ -99,8 +99,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[即将到来到幸运]]></title>
-        <id>https://maxbee.github.io/post/ji-jiang-dao-lai-dao-xing-yun/</id>
-        <link href="https://maxbee.github.io/post/ji-jiang-dao-lai-dao-xing-yun/">
+        <id>http://localhost:4000/post/ji-jiang-dao-lai-dao-xing-yun/</id>
+        <link href="http://localhost:4000/post/ji-jiang-dao-lai-dao-xing-yun/">
         </link>
         <updated>2019-12-26T13:45:09.000Z</updated>
         <content type="html"><![CDATA[<p>没想到2020年还没到来，一个幸运却悄悄来临来。在上班的时候准备像往常一下划下水，点亮手机屏幕，一条短信中的几个文字突然在我眼前一闪而过，仔细一看，这文字内容有点熟悉却又有点陌生，刹时我的脸泛泛一红，心跳微微加速，没想到是我中签了。足足11个月了，说来我也算幸运，早在2018年1月我就提交了我第一次的摇号申请，正如每次抽奖都觉得自己会中一样，我认为在几个月之内就可以中签，或者说就是那个月。但，没想到这个惊喜来得如此突然，没有给我一点准备去迎接，甚至我都还没想起来今天是摇号的日子。</p>
@@ -110,18 +110,18 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[拍摄前的一些准备]]></title>
-        <id>https://maxbee.github.io/post/pai-she-qian-de-yi-xie-zhun-bei/</id>
-        <link href="https://maxbee.github.io/post/pai-she-qian-de-yi-xie-zhun-bei/">
+        <id>http://localhost:4000/post/pai-she-qian-de-yi-xie-zhun-bei/</id>
+        <link href="http://localhost:4000/post/pai-she-qian-de-yi-xie-zhun-bei/">
         </link>
         <updated>2019-12-22T14:04:37.000Z</updated>
         <content type="html"><![CDATA[<p><img src="https://wx4.sinaimg.cn/mw690/6a20e7e9ly1ga5w98k3chj20u00vfqv6.jpg" alt="" loading="lazy"><br>
-鉴于上周出去拍了一些图片自我感觉还不错,今天打算再接再厉。出门前一切都计划得很顺利很周全，场景在网上查过了，想要拍摄得风格也都想清楚了，一切都是想象中那样美丽。时间到点就出发去场地了，到达场地后才发现是这次拍摄得噩梦，给我深深的上了一课。因为场地太大了，而且位置也不是我预想中那样，前前后后走了差不多一个小时都没找到场地。我计划是两点多到达场地，五点多太阳落山下午的阳光恰好可以拍两个多小时，但是我万万没预算要找场地那么久，找到场地的时候阳光已经很弱了，所以也没能拍到什么光影比较好的照片，可以说今天出去拍照真是一踏涂地，拍的照片也很不好看。但是也并不是没有收获的，作为一名新手摄影师这些也是我成长的必经之路。这次的经历让我意识到冬天的日落比较早，即使是算计好太阳落山时间，也不能压轴的去安排时间，五点多日落其实在四点钟左右阳光强度已经不是很强烈了，不过也有可能是今天天气稍微表多云的原因。其次提前到场找好场地也是重要事项之一，这可以让你提前了解场地，观察光线的位置，拍摄的时候可以提前做准备，不要像今天一样把时间都浪费在找场地了，其实今天的场地还是不错的，很有感觉，非常可惜，希望下次把摄影学好点了再去拍一次，不想每次都去同一个场地拍摄。<img src="https://maxbee.github.io/post-images/1577029265572.jpg" alt="" loading="lazy"></p>
+鉴于上周出去拍了一些图片自我感觉还不错,今天打算再接再厉。出门前一切都计划得很顺利很周全，场景在网上查过了，想要拍摄得风格也都想清楚了，一切都是想象中那样美丽。时间到点就出发去场地了，到达场地后才发现是这次拍摄得噩梦，给我深深的上了一课。因为场地太大了，而且位置也不是我预想中那样，前前后后走了差不多一个小时都没找到场地。我计划是两点多到达场地，五点多太阳落山下午的阳光恰好可以拍两个多小时，但是我万万没预算要找场地那么久，找到场地的时候阳光已经很弱了，所以也没能拍到什么光影比较好的照片，可以说今天出去拍照真是一踏涂地，拍的照片也很不好看。但是也并不是没有收获的，作为一名新手摄影师这些也是我成长的必经之路。这次的经历让我意识到冬天的日落比较早，即使是算计好太阳落山时间，也不能压轴的去安排时间，五点多日落其实在四点钟左右阳光强度已经不是很强烈了，不过也有可能是今天天气稍微表多云的原因。其次提前到场找好场地也是重要事项之一，这可以让你提前了解场地，观察光线的位置，拍摄的时候可以提前做准备，不要像今天一样把时间都浪费在找场地了，其实今天的场地还是不错的，很有感觉，非常可惜，希望下次把摄影学好点了再去拍一次，不想每次都去同一个场地拍摄。<img src="http://localhost:4000/post-images/1577029265572.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[各相机品牌镜头卡口类型]]></title>
-        <id>https://maxbee.github.io/post/ge-xiang-ji-pin-pai-jing-tou-qia-kou-lei-xing/</id>
-        <link href="https://maxbee.github.io/post/ge-xiang-ji-pin-pai-jing-tou-qia-kou-lei-xing/">
+        <id>http://localhost:4000/post/ge-xiang-ji-pin-pai-jing-tou-qia-kou-lei-xing/</id>
+        <link href="http://localhost:4000/post/ge-xiang-ji-pin-pai-jing-tou-qia-kou-lei-xing/">
         </link>
         <updated>2019-11-23T15:30:25.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
@@ -150,8 +150,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[摄影笔记（1）]]></title>
-        <id>https://maxbee.github.io/post/she-ying-bi-ji-1/</id>
-        <link href="https://maxbee.github.io/post/she-ying-bi-ji-1/">
+        <id>http://localhost:4000/post/she-ying-bi-ji-1/</id>
+        <link href="http://localhost:4000/post/she-ying-bi-ji-1/">
         </link>
         <updated>2019-11-21T09:28:39.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -190,8 +190,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[网站快速支持自动切换暗黑模式和日常模式]]></title>
-        <id>https://maxbee.github.io/post/wang-zhan-kuai-su-zhi-chi-zi-dong-qie-huan-an-hei-mo-shi-he-ri-chang-mo-shi/</id>
-        <link href="https://maxbee.github.io/post/wang-zhan-kuai-su-zhi-chi-zi-dong-qie-huan-an-hei-mo-shi-he-ri-chang-mo-shi/">
+        <id>http://localhost:4000/post/wang-zhan-kuai-su-zhi-chi-zi-dong-qie-huan-an-hei-mo-shi-he-ri-chang-mo-shi/</id>
+        <link href="http://localhost:4000/post/wang-zhan-kuai-su-zhi-chi-zi-dong-qie-huan-an-hei-mo-shi-he-ri-chang-mo-shi/">
         </link>
         <updated>2019-11-20T03:00:59.000Z</updated>
         <content type="html"><![CDATA[<p>只需要在CSS添加以下代码即可：</p>
