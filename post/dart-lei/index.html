@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    拍摄前的一些准备 | 
+    Dart 笔记 | 
 </title>
 <link rel="shortcut icon" href="https://maxbee.github.io/favicon.ico?v=1588770024832">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -118,23 +118,96 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            拍摄前的一些准备
+                            Dart 笔记
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2019-12-22</time>
+                            <time class="post-time">2020-05-01</time>
                             
-                                <a href="https://maxbee.github.io/tag/photography/" class="post-tag i-tag
-                            i-tag-other_2">
-                            #摄影
-                        </a>
-                                
                         </div>
                         
-                            <div class="post-feature-image" style="background-image: url('https://wx2.sinaimg.cn/mw690/6a20e7e9ly1ga5wmvu0msj213t0u0x6p.jpg')"></div>
-                            
                                 <div class="post-content">
-                                    <p><img src="https://wx4.sinaimg.cn/mw690/6a20e7e9ly1ga5w98k3chj20u00vfqv6.jpg" alt="" loading="lazy"><br>
-鉴于上周出去拍了一些图片自我感觉还不错,今天打算再接再厉。出门前一切都计划得很顺利很周全，场景在网上查过了，想要拍摄得风格也都想清楚了，一切都是想象中那样美丽。时间到点就出发去场地了，到达场地后才发现是这次拍摄得噩梦，给我深深的上了一课。因为场地太大了，而且位置也不是我预想中那样，前前后后走了差不多一个小时都没找到场地。我计划是两点多到达场地，五点多太阳落山下午的阳光恰好可以拍两个多小时，但是我万万没预算要找场地那么久，找到场地的时候阳光已经很弱了，所以也没能拍到什么光影比较好的照片，可以说今天出去拍照真是一踏涂地，拍的照片也很不好看。但是也并不是没有收获的，作为一名新手摄影师这些也是我成长的必经之路。这次的经历让我意识到冬天的日落比较早，即使是算计好太阳落山时间，也不能压轴的去安排时间，五点多日落其实在四点钟左右阳光强度已经不是很强烈了，不过也有可能是今天天气稍微表多云的原因。其次提前到场找好场地也是重要事项之一，这可以让你提前了解场地，观察光线的位置，拍摄的时候可以提前做准备，不要像今天一样把时间都浪费在找场地了，其实今天的场地还是不错的，很有感觉，非常可惜，希望下次把摄影学好点了再去拍一次，不想每次都去同一个场地拍摄。<img src="https://maxbee.github.io/post-images/1577029265572.jpg" alt="" loading="lazy"></p>
+                                    <h3 id="类的继承">类的继承</h3>
+<p>1 、子类使用extends关键字来继承父类<br>
+2、子类会继承父类里面可见的属性和方法，但是不会继承构造函数，需要重写<br>
+3、子类能复写父类的方法 getter 和setter</p>
+<p>Dart私有变量在变量名前加下划线 _ , 私有变量需要把类抽离到单独的文件才不能访问，否则调用还是可以访问私有变量。</p>
+<pre><code>class Person{
+    String _name;
+    //构造函数
+    Person(this.name)
+    //命名构造函数
+    Person.getName(){
+        print(&quot;$_name&quot;)
+    }
+}
+</code></pre>
+<h3 id="dart中的操作运算符">Dart中的操作运算符</h3>
+<pre><code>  ？条件运算符
+  as 类型运算符
+  is 类型判断
+  .. 级联操作
+
+  Person p = new Person('Jason',22)
+  p..name='gome'
+  ..age = 23
+  ..say();
+</code></pre>
+<p>面向对象的三大特性：封装、继承、多态</p>
+<h3 id="包安装库命令">包安装库命令</h3>
+<pre><code>```
+pub get
+``` 
+</code></pre>
+<h3 id="引入库别名">引入库别名</h3>
+<pre><code>    import 'lib/fun.dart' as OtherName;
+
+    OtherName person = new OtherName.类名（）
+</code></pre>
+<h3 id="入库的一部分">入库的一部分</h3>
+<pre><code>    import 'lib/myMath.dart show getName; //getName是方法名
+    
+    import 'lib/myMath.dart hide getAge;
+    void main{
+        getName
+    }
+</code></pre>
+<p>构造函数语法</p>
+<pre><code>PosterDetail({Key key,@required this.testState,@required this.group}):super(key:key);
+注解：
+@required：设定为必填参数
+</code></pre>
+<h3 id="命名可选参数大括号">命名可选参数大括号：</h3>
+<p>大括号之内的是选填参数，可以不填，不填为空。例如：</p>
+<pre><code>void main(){
+  test(name:&quot;xiegm&quot;);
+}
+ 
+void test({String name,String age}){
+  print('名字是$name，今年$age岁了');
+}
+</code></pre>
+<p>输出的结果是：名字是xiegm，今年null岁了</p>
+<p>位置可选参数：</p>
+<pre><code>void main(){
+  test(&quot;1&quot;);
+}
+ 
+void test(String day,[int age,String name,]){
+  print('今天是星期$day,我是$name，我今年$age岁了');
+}
+</code></pre>
+<p>输出结果是：今天是星期1,我是null，我今年null岁了</p>
+<p>第一个参数day是必填的，如果要填第三个参数，必须要填第二个参数。如果填入的数据为(String,String)语法检测会不通过</p>
+<p>默认值：</p>
+<p>位置选填参数：</p>
+<pre><code>  void test(String day,[int age=10,String name,])
+</code></pre>
+<p>命名选填参数<br>
+ ```   void test({String name,int age:10})</p>
+<pre><code>
+
+  
+</code></pre>
 
                                 </div>
                     </article>
@@ -142,9 +215,9 @@
                     
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://maxbee.github.io/post/ge-xiang-ji-pin-pai-jing-tou-qia-kou-lei-xing/">
+                            <a href="https://maxbee.github.io/post/gridea-pei-zhi-gitalk-ping-lun-xi-tong/">
                                 <h3 class="post-title">
-                                    各相机品牌镜头卡口类型
+                                    Gridea配置Gitalk评论系统
                                 </h3>
                             </a>
                         </div>
@@ -157,32 +230,55 @@
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://maxbee.github.io/images/avatar.png?v=1588770024832)">
-        </div>
-        <h1 class="id_card-title">
-            
-        </h1>
-        <h2 class="id_card-description">
-            Never Complain
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E7%B1%BB%E7%9A%84%E7%BB%A7%E6%89%BF">类的继承</a></li>
+<li><a href="#dart%E4%B8%AD%E7%9A%84%E6%93%8D%E4%BD%9C%E8%BF%90%E7%AE%97%E7%AC%A6">Dart中的操作运算符</a></li>
+<li><a href="#%E5%8C%85%E5%AE%89%E8%A3%85%E5%BA%93%E5%91%BD%E4%BB%A4">包安装库命令</a></li>
+<li><a href="#%E5%BC%95%E5%85%A5%E5%BA%93%E5%88%AB%E5%90%8D">引入库别名</a></li>
+<li><a href="#%E5%85%A5%E5%BA%93%E7%9A%84%E4%B8%80%E9%83%A8%E5%88%86">入库的一部分</a></li>
+<li><a href="#%E5%91%BD%E5%90%8D%E5%8F%AF%E9%80%89%E5%8F%82%E6%95%B0%E5%A4%A7%E6%8B%AC%E5%8F%B7">命名可选参数大括号：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-                                    
+                            
 
                 </div>
 
