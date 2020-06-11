@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maxbee.github.io</id>
     <title></title>
-    <updated>2020-05-11T08:32:38.634Z</updated>
+    <updated>2020-06-11T10:45:12.895Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maxbee.github.io"/>
     <link rel="self" href="https://maxbee.github.io/atom.xml"/>
@@ -11,93 +11,12 @@
     <icon>https://maxbee.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, </rights>
     <entry>
-        <title type="html"><![CDATA[Dart 笔记]]></title>
-        <id>https://maxbee.github.io/post/dart-lei/</id>
-        <link href="https://maxbee.github.io/post/dart-lei/">
+        <title type="html"><![CDATA[思想反馈]]></title>
+        <id>https://maxbee.github.io/post/zui-jin-de-gan-wu/</id>
+        <link href="https://maxbee.github.io/post/zui-jin-de-gan-wu/">
         </link>
-        <updated>2020-05-01T00:40:44.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="类的继承">类的继承</h3>
-<p>1 、子类使用extends关键字来继承父类<br>
-2、子类会继承父类里面可见的属性和方法，但是不会继承构造函数，需要重写<br>
-3、子类能复写父类的方法 getter 和setter</p>
-<p>Dart私有变量在变量名前加下划线 _ , 私有变量需要把类抽离到单独的文件才不能访问，否则调用还是可以访问私有变量。</p>
-<pre><code>class Person{
-    String _name;
-    //构造函数
-    Person(this.name)
-    //命名构造函数
-    Person.getName(){
-        print(&quot;$_name&quot;)
-    }
-}
-</code></pre>
-<h3 id="dart中的操作运算符">Dart中的操作运算符</h3>
-<pre><code>  ？条件运算符
-  as 类型运算符
-  is 类型判断
-  .. 级联操作
-
-  Person p = new Person('Jason',22)
-  p..name='gome'
-  ..age = 23
-  ..say();
-</code></pre>
-<p>面向对象的三大特性：封装、继承、多态</p>
-<h3 id="包安装库命令">包安装库命令</h3>
-<pre><code>```
-pub get
-``` 
-</code></pre>
-<h3 id="引入库别名">引入库别名</h3>
-<pre><code>    import 'lib/fun.dart' as OtherName;
-
-    OtherName person = new OtherName.类名（）
-</code></pre>
-<h3 id="入库的一部分">入库的一部分</h3>
-<pre><code>    import 'lib/myMath.dart show getName; //getName是方法名
-    
-    import 'lib/myMath.dart hide getAge;
-    void main{
-        getName
-    }
-</code></pre>
-<p>构造函数语法</p>
-<pre><code>PosterDetail({Key key,@required this.testState,@required this.group}):super(key:key);
-注解：
-@required：设定为必填参数
-</code></pre>
-<h3 id="命名可选参数大括号">命名可选参数大括号：</h3>
-<p>大括号之内的是选填参数，可以不填，不填为空。例如：</p>
-<pre><code>void main(){
-  test(name:&quot;xiegm&quot;);
-}
- 
-void test({String name,String age}){
-  print('名字是$name，今年$age岁了');
-}
-</code></pre>
-<p>输出的结果是：名字是xiegm，今年null岁了</p>
-<p>位置可选参数：</p>
-<pre><code>void main(){
-  test(&quot;1&quot;);
-}
- 
-void test(String day,[int age,String name,]){
-  print('今天是星期$day,我是$name，我今年$age岁了');
-}
-</code></pre>
-<p>输出结果是：今天是星期1,我是null，我今年null岁了</p>
-<p>第一个参数day是必填的，如果要填第三个参数，必须要填第二个参数。如果填入的数据为(String,String)语法检测会不通过</p>
-<p>默认值：</p>
-<p>位置选填参数：</p>
-<pre><code>  void test(String day,[int age=10,String name,])
-</code></pre>
-<p>命名选填参数<br>
- ```   void test({String name,int age:10})</p>
-<pre><code>
-
-  
-</code></pre>
+        <updated>2020-06-11T10:08:21.000Z</updated>
+        <content type="html"><![CDATA[<p>过去我常纠结于购买这样的电子产品还是那样的鞋子、衣服，对生活中的琐碎事纠结苦恼，但这真是值得我去烦恼的事情吗？过于执着在生活中的琐碎事，而不是思考这样做能为我带来什么好处，对我的生活带来什么改善。日复一日在焦虑中度过，却不知道焦虑的是什么，感觉我的大脑在不知不觉中停滞了，越来越像读书时看到的一句话 -- 有的人活着他已经死了，有的人死了但他还活着 。我渴望自己对不同的事情会有更多的看法，看待问题的角度会不一样，拥有更强的独立思考的能力；渴望建立更健全的人格；渴望保持对事物。所以我很焦虑的去读书，读更多的书，同时带有目的去读书，导致我读书也静不下心来，学习新技能亦如此。年轻人所拥有的浮躁、没耐心等缺点我都有了，可能这证明我还是一个年轻人吧。</p>
 ]]></content>
     </entry>
     <entry>
@@ -156,6 +75,42 @@ void test(String day,[int age,String name,]){
 <h3 id="如何定义或者计算自己的训练强度呢">如何定义或者计算自己的训练强度呢？</h3>
 <p>日常训练中，你只需要记住下面这个简易的衡量标准就可以了：1.大训练量：你状态最好的时候的训练负荷。2.中训练量：大训练量×90%。3.小训练量：大训练量×85%。<br>
 <img src="https://maxbee.github.io/post-images/1589185945043.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[图片网站收集]]></title>
+        <id>https://maxbee.github.io/post/tu-pian-wang-zhan-shou-ji/</id>
+        <link href="https://maxbee.github.io/post/tu-pian-wang-zhan-shou-ji/">
+        </link>
+        <updated>2020-01-03T09:53:58.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>学习摄影收集了一些网站，日常浏览学习可以用于提高审美。</p>
+</blockquote>
+<p>https://www.thehappybloom.com/ 婚礼<br>
+http://www.chymomore.com/ 婚礼<br>
+https://35photo.pro/davidfotographer/<br>
+https://www.magnoliarouge.com/ 婚礼<br>
+https://www.woodylaulau.com/  日系<br>
+https://www.samalive.co/ samalive<br>
+https://www.kyleeyee.com/ 婚礼<br>
+https://rebeccacurtis.studio/ 瑞贝卡柯蒂斯的胶片<br>
+https://ckovalev.com/ 电影感肖像<br>
+http://www.stanislavpetera.com/ 电影感肖像2<br>
+https://www.instagram.com/stephanesbphotography/  ins摄影师<br>
+https://maximage.org/Tintype  max的tintype（湿版摄影）<br>
+http://artofckphoto.com/  衣果体<br>
+http://www.c-heads.com/category/editorial/  c-beads magazine<br>
+http://anastasiiakrivenok.com/ 婚礼<br>
+https://www.markushenttonen.com/stories-of-summer<br>
+https://www.soniaszostak.com/<br>
+http://kkonst.com/ KK<br>
+https://thekitcheners.co.uk/ 厨子哥<br>
+http://hideakihamada.com/people 滨田英明<br>
+http://www.dacafe.cc/ 森友治<br>
+http://goroke.co.kr/ 韩国服装网站<br>
+http://theatlasmagazine.com/<br>
+https://www.jenn-collins.com/ 肖像修图<br>
+https://www.art-rogozhkin.com/portfolio 毛子哥</p>
 ]]></content>
     </entry>
     <entry>
