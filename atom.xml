@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maxbee.github.io</id>
     <title></title>
-    <updated>2020-06-11T10:45:12.895Z</updated>
+    <updated>2020-08-06T03:50:32.071Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maxbee.github.io"/>
     <link rel="self" href="https://maxbee.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://maxbee.github.io/images/avatar.png</logo>
     <icon>https://maxbee.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, </rights>
+    <entry>
+        <title type="html"><![CDATA[碎碎记]]></title>
+        <id>https://maxbee.github.io/post/sui-sui-ji/</id>
+        <link href="https://maxbee.github.io/post/sui-sui-ji/">
+        </link>
+        <updated>2020-07-30T03:37:25.000Z</updated>
+        <content type="html"><![CDATA[<p>2020-7-24<br>
+最近买了人生中第一台车子，上了人生中第一块车牌，还体验了一次「不一样的」提车体验。</p>
+<p>2020-07-30<br>
+今天是最后一天上班了，准备离开工作了两年多的公司，换一个新的环境。</p>
+<p>2020-08-05<br>
+有车要插我的位置，我不让，发生了摩擦碰撞，还好只是擦到了镜子，不明显。没想到这么快就产生了碰撞，后面开车还是要小心点，慢点就慢点吧。</p>
+<p>晚上买好了去上海的机票了，去上海玩一段时间。</p>
+<p>2020-08-06<br>
+准备好提升学历的资料，报完名就等考试了，旅游回来准备复习下找新工作，希望一切顺利。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[思想反馈]]></title>
         <id>https://maxbee.github.io/post/zui-jin-de-gan-wu/</id>
@@ -237,30 +254,6 @@ https://www.art-rogozhkin.com/portfolio 毛子哥</p>
 <h5 id="iso感光度">ISO感光度</h5>
 <p>感光度的量化标准体系“称为ISO”，它是国际通行的标准之一，一般我们会用ISO100、ISO200这样的方式来表示感光度，“ISO200”感光度是“ISO100”的两倍，使用ISO200时要比ISO100缩短一级快门，使用ISO400就可以比ISO100缩短两级。通常来说，低感光度指ISO200以下，高感光度则指400以上。</p>
 <p>如文章内容有误，欢迎指出。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[网站快速支持自动切换暗黑模式和日常模式]]></title>
-        <id>https://maxbee.github.io/post/wang-zhan-kuai-su-zhi-chi-zi-dong-qie-huan-an-hei-mo-shi-he-ri-chang-mo-shi/</id>
-        <link href="https://maxbee.github.io/post/wang-zhan-kuai-su-zhi-chi-zi-dong-qie-huan-an-hei-mo-shi-he-ri-chang-mo-shi/">
-        </link>
-        <updated>2019-11-20T03:00:59.000Z</updated>
-        <content type="html"><![CDATA[<p>只需要在CSS添加以下代码即可：</p>
-<pre><code>@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #444;
-    color: #e4e4e4;
-  }
-  a {
-    color: #e39777;
-  }
-  img {
-    filter: grayscale(30%);
-  }
-}
-</code></pre>
-<p>支持Firefox, Safari, Chrome浏览器</p>
-<p><a href="%5Bhttps://tombrow.com/dark-mode-website-css%5D(https://tombrow.com/dark-mode-website-css)">参考来源</a></p>
 ]]></content>
     </entry>
 </feed>
