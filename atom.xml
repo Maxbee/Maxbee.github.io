@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://maxbee.github.io</id>
     <title></title>
-    <updated>2020-11-24T01:02:43.549Z</updated>
+    <updated>2020-11-24T01:03:08.436Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://maxbee.github.io"/>
     <link rel="self" href="https://maxbee.github.io/atom.xml"/>
@@ -20,6 +20,162 @@
 <p>外出学习对比起在家里会更有紧迫感，环境也没有在家里的安逸。在家里学习会学一短时间就想躺沙发上玩手机刷刷微博、抖音，要不就是犯困。而外出带有更强的目的性，周围的环境限制了我娱乐的选择，让我更容易专注做好事情。其实早在之前就想找咖啡厅坐下来学习，之所以一直没有执行是觉得开车外出停车不方便，同时觉得咖啡厅人多会影响状态，没有效率。</p>
 <p>总之，往后要多点尝试外出学习～😋</p>
 <figure data-type="image" tabindex="1"><img src="https://maxbee.github.io/post-images/1602399018445.png" alt="点的餐" width="30%" height="30%" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[常见面试题]]></title>
+        <id>https://maxbee.github.io/post/chang-jian-mian-shi-ti/</id>
+        <link href="https://maxbee.github.io/post/chang-jian-mian-shi-ti/">
+        </link>
+        <updated>2020-09-26T13:47:18.000Z</updated>
+        <content type="html"><![CDATA[<p>最近面试发现有一些面试题出现频率挺高的，所以把这些题记录下来做一个复习和总结</p>
+<h4 id="spa页面的缺点">SPA页面的缺点</h4>
+<p>1、首屏加载慢<br>
+2、不利于SEO</p>
+<p>同构：既能ssr（server side rendering，服务端渲染）也能csr（client side rendering）</p>
+<p>shoucomponetUpdate 只要state 或prop有改变就刷新<br>
+shoucomponetUpdate接受两个参数：nextProps和nextState，分别表示下一个props和下一个state的值</p>
+<p>pureComponent是浅比较，只比较内存地址是否有改变才刷新</p>
+<p>css in js 方案<br>
+styled-component，<br>
+styled-jsx</p>
+<p>useEffect相当于componentDidMount、componentDidUpdate生命周期</p>
+<h3 id="css实现正方形">CSS实现正方形</h3>
+<p>vw是根据屏幕宽度设置</p>
+<pre><code>&lt;div class=&quot;square&quot;&gt;hello,viewport&lt;/div&gt;
+&lt;style&gt;
+.square {
+        width: 50%;
+        height: 50vw;
+        background: #ccc;
+  }
+ &lt;/style&gt;
+</code></pre>
+<p>设置垂直方向的padding撑开容器(padding可以用百分比，百分比是根据它包含块的width来确定的，也就是父级元素的width）<br>
+在这里需要注意一下，如果不写hegith的话，正方形内文字会溢出，溢出的高度正好就是文字所占空间的高度。<br>
+<div class="square2"></div><br>
+<style><br>
+.square2{<br>
+width: 50%;<br>
+padding-bottom:100%;<br>
+height：0；<br>
+}<br>
+</style></p>
+<h3 id="css三角形">CSS三角形</h3>
+<pre><code>div {
+    width: 0;
+    height: 0;
+    border: 40px solid;
+    border-color: orange blue red green;
+}
+</code></pre>
+<h3 id="react中的setstate是同步还是异步">react中的setState是同步还是异步</h3>
+<p>setState 只在合成事件和钩子函数中是“异步”的，在原生事件和 setTimeout 中都是同步的。</p>
+<p>合成事件：就是react 在组件中的onClick等都是属于它自定义的合成事件</p>
+<p>原生事件：比如通过addeventListener添加的，dom中的原生事</p>
+<h3 id="react合成事件">react合成事件</h3>
+<p>如果DOM上绑定了过多的事件处理函数，整个页面响应以及内存占用可能都会受到影响。React为了避免这类DOM事件滥用，同时屏蔽底层不同浏览器之间的事件系统差异，实现了一个中间层——SyntheticEvent。</p>
+<p>当用户在为onClick添加函数时，React并没有将Click时间绑定在DOM上面。<br>
+而是在document处监听所有支持的事件，当事件发生并冒泡至document处时，React将事件内容封装交给中间层SyntheticEvent（负责所有事件合成）<br>
+所以当事件触发的时候，对使用统一的分发函数dispatchEvent将指定函数执行。</p>
+<h3 id="红任务和微任务">红任务和微任务</h3>
+<p>宏任务先于微任务执行。<br>
+宏任务包括整体代码script，setTimeout，setInterval；<br>
+微任务有Promise，process.nextTick</p>
+<h3 id="定义css变量">定义css变量</h3>
+<pre><code>:root{
+    --color-text:#666;
+    --color-height-text:#ff5777;
+    --color-tint:#ff8198;
+    --color-background:#fff;
+    --font-size:14px;
+    --line-height:1.5;
+    --large-size:1.5;
+}  
+</code></pre>
+<h4 id="react和vue的优缺点">react和vue的优缺点</h4>
+<p>reacrt:<br>
+1、单向数据流 2、 虚拟DOM帮助解决了跨浏览器问题，并为我们提供了标准化的API 3、代码一切皆是组件，更加模块化，重用代码更容易，可维护性高 4、使用虚拟DOM的概念，性能好，速度快。</p>
+<p>缺点：<br>
+React用于构建用户界面的 JavaScript 库<br>
+React本身只是一个V而已，并不是一个完整的框架，所以如果是大型项目想要一套完整的框架的话，基本都需要加上ReactRouter和Redux才能写大型应用<br>
+JSX语言：允许js和html的混写</p>
+<h4 id="vue-router-钩子">vue-router 钩子</h4>
+<p>全局导航钩子<br>
+beforeEach<br>
+路由独享的钩子<br>
+beforeEnter<br>
+组件内钩子</p>
+<pre><code>  beforeRouteEnter(to, from, next) {
+        // do someting
+        // 在渲染该组件的对应路由被 confirm 前调用
+    },
+    beforeRouteUpdate(to, from, next) {
+        // do someting
+        // 在当前路由改变，但是依然渲染该组件是调用
+    },
+    beforeRouteLeave(to, from ,next) {
+        // do someting
+        // 导航离开该组件的对应路由时被调用
+    }
+</code></pre>
+<h4 id="vue组件name的作用">vue组件name的作用</h4>
+<p>1、当项目使用keep-alive时，可搭配组件name进行缓存过滤<br>
+<keep-alive exclude="Detail"><br>
+<router-view/><br>
+</keep-alive></p>
+<p>2、vue-devtools调试工具里显示的组见名称是由vue中组件name决定的</p>
+<h4 id="前端路由实现">前端路由实现</h4>
+<p>hash实现<br>
+hash 使用锚点(#) 改变url 不会引起刷新</p>
+<p>监听hashchange事件，判断location.hash 进行对应视图的改变</p>
+<p>history实现<br>
+history提供了 pushState 和 replaceState这两个方法，改变url不会引起页面刷新</p>
+<p>监听popState事件，并且判断location.pathname 进行对应视图的改变</p>
+<p>注意： 使用history实现时，需要取消a标签的默认跳转行为，另外该方式不支持file协议</p>
+<h4 id="get和post的区别">GET和POST的区别？</h4>
+<p>两者之间最重大的区别就是：<br>
+GET产生一个TCP数据包；POST产生两个TCP数据包。</p>
+<p>具体点说来就是：</p>
+<p>对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；<br>
+而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200<br>
+ok（返回数据）。</p>
+<p>sessionStorage与localStorage的区别<br>
+https://www.jianshu.com/p/3983af7c380a</p>
+<p>浏览器渲染原理和过程<br>
+https://www.jianshu.com/p/e6252dc9be32</p>
+<p>事件循环机制：<br>
+https://www.cnblogs.com/yugege/p/9598265.html</p>
+<h4 id="promiseall异常处理">Promise.all()异常处理</h4>
+<p>切入点 1：<br>
+由于Promise.all(request).then(…).catch(…) 会在所有request都resolve时才会进then方法，并且把所<br>
+有结果以一个数组返回，只要有一个失败，就会进catch。而如果在单个请求中定义了catch方法，那么就<br>
+不会进Promise.all的catch方法。因此，可以在单个的catch中对失败的promise请求做处理，可以使<br>
+成功的请求正常返回</p>
+<p>切入点 1：<br>
+出现错误请求之后不进行reject操作,而是继续resolve('error), 之后同意交给promise.all()进行处理</p>
+<h4 id="promise-优缺点">Promise 优缺点</h4>
+<p>有了 Promise 对象，就可以将异步操作以同步操作的流程表达出来，避免了层层嵌套的回调函数。此外，Promise 对象提供统一的接口，使得控制异步操作更加容易。</p>
+<p>Promise 也有一些缺点。首先，无法取消 Promise，一旦新建它就会立即执行，无法中途取消。其次，如果不设置回调函数，Promise 内部抛出的错误，不会反应到外部。第三，当处于 Pending 状态时，无法得知目前进展到哪一个阶段（刚刚开始还是即将完成）。</p>
+<p>解决了什么问题：1、解决了层层嵌套，代码地狱回调  2、代码可读性更强</p>
+<p>作用域，是指变量的生命周期（一个变量在哪些范围内保持一定值）</p>
+<h4 id="promise和awaitasync">promise和await/async</h4>
+<p>https://segmentfault.com/a/1190000016788484</p>
+<p>async fnc()=&gt;{<br>
+return 'result'<br>
+}<br>
+//fnc 相当于返回Promise.resolve('result')</p>
+<h4 id="受控组件和非受控组件">受控组件和非受控组件</h4>
+<p>https://juejin.im/post/6844903629493633038</p>
+<h4 id="css优先级">CSS优先级</h4>
+<p>内联 &gt; ID选择器 &gt; 类选择器 &gt; 标签选择器</p>
+<p>无跨越session，cookie<br>
+跨域token</p>
+<p>let {data:res} = result<br>
+解构重命名data为res</p>
+<p>格式化执行的文件.prettierrc</p>
+<p>本地分支（dev）推送到远程<br>
+git push -u origin (远程分支名)</p>
 ]]></content>
     </entry>
     <entry>
@@ -201,16 +357,6 @@ https://www.art-rogozhkin.com/portfolio 毛子哥</p>
         <content type="html"><![CDATA[<p>没想到2020年还没到来，一个幸运却悄悄来临来。在上班的时候准备像往常一下划下水，点亮手机屏幕，一条短信中的几个文字突然在我眼前一闪而过，仔细一看，这文字内容有点熟悉却又有点陌生，刹时我的脸泛泛一红，心跳微微加速，没想到是我中签了。足足11个月了，说来我也算幸运，早在2018年1月我就提交了我第一次的摇号申请，正如每次抽奖都觉得自己会中一样，我认为在几个月之内就可以中签，或者说就是那个月。但，没想到这个惊喜来得如此突然，没有给我一点准备去迎接，甚至我都还没想起来今天是摇号的日子。</p>
 <p>所以我很开心，开心的是指标摇到了，不过却有一个坏消息，这买车的钱去哪整呢。不过这个问题还有一年时间给我解决。可能是因为在这70万参与抽签的人中被选中，我的心情变得愉悦起来，甚至对即将到来的2020年充满期待,有一种不知如何描述的心情，感觉属于我的2020即将要到来了。<br>
 <img src="https://i.loli.net/2019/12/26/QHTigaAFhLxvfdC.jpg" alt="" loading="lazy"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[拍摄前的一些准备]]></title>
-        <id>https://maxbee.github.io/post/pai-she-qian-de-yi-xie-zhun-bei/</id>
-        <link href="https://maxbee.github.io/post/pai-she-qian-de-yi-xie-zhun-bei/">
-        </link>
-        <updated>2019-12-22T14:04:37.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://wx4.sinaimg.cn/mw690/6a20e7e9ly1ga5w98k3chj20u00vfqv6.jpg" alt="" loading="lazy"><br>
-鉴于上周出去拍了一些图片自我感觉还不错,今天打算再接再厉。出门前一切都计划得很顺利很周全，场景在网上查过了，想要拍摄得风格也都想清楚了，一切都是想象中那样美丽。时间到点就出发去场地了，到达场地后才发现是这次拍摄得噩梦，给我深深的上了一课。因为场地太大了，而且位置也不是我预想中那样，前前后后走了差不多一个小时都没找到场地。我计划是两点多到达场地，五点多太阳落山下午的阳光恰好可以拍两个多小时，但是我万万没预算要找场地那么久，找到场地的时候阳光已经很弱了，所以也没能拍到什么光影比较好的照片，可以说今天出去拍照真是一踏涂地，拍的照片也很不好看。但是也并不是没有收获的，作为一名新手摄影师这些也是我成长的必经之路。这次的经历让我意识到冬天的日落比较早，即使是算计好太阳落山时间，也不能压轴的去安排时间，五点多日落其实在四点钟左右阳光强度已经不是很强烈了，不过也有可能是今天天气稍微表多云的原因。其次提前到场找好场地也是重要事项之一，这可以让你提前了解场地，观察光线的位置，拍摄的时候可以提前做准备，不要像今天一样把时间都浪费在找场地了，其实今天的场地还是不错的，很有感觉，非常可惜，希望下次把摄影学好点了再去拍一次，不想每次都去同一个场地拍摄。<img src="https://maxbee.github.io/post-images/1577029265572.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
