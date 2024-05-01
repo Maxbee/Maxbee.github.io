@@ -1,0 +1,283 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    前端 | 
+</title>
+<link rel="shortcut icon" href="https://maxbee.github.io/favicon.ico?v=1714552861739">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://maxbee.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxbee.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164673086-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164673086-1');
+    </script>
+    
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://maxbee.github.io">
+                <img class="avatar" src="https://maxbee.github.io/images/avatar.png?v=1714552861739" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+    <div class="i-card">
+        <b>标签：#
+        前端</b>
+    </div>
+    
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://maxbee.github.io/post/css-rang-liu-lan-qi-de-gun-dong-tiao-yi-zhi-xian-shi/">
+                        css 让浏览器的滚动条一直显示
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2021-06-15</time>
+                    
+                        <a href="https://maxbee.github.io/tag/front/" class="post-tag i-tag
+                            i-tag-warning">
+            #前端
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            chrome浏览器地上的滚动条只会在你滚动的时候显示滚动条，如果想让滚动条默认显示可以用如下代码
+&amp;lt;div class=&amp;quot;test&amp;quot;&amp;gt;
+滚动的区域
+&amp;lt;/div&amp;gt;
+.tester::-webkit-scrollbar { 
+	/* 隐藏默认的滚动条 */
+	-webkit-appearance: none;
+}
+.tester::-webkit-scrollbar:vertical { 
+	/* 设置垂直滚动条宽度 */
+	width: 2px;
+}
+
+.tester::-webkit-scrollbar:horizontal{
+	/* 设置水平滚动条厚度 */
+	height: 2px;
+}
+
+.tester::-webkit-scrollbar-thumb { 
+	/* 滚动条的其他样式定制，注意，这个一定也要定制，否则就是一个透明的滚动条 */
+	border-radius: 8px; 
+	border: 2px solid rgba(255,255,255,.4); 
+	background-color: rgba(0, 0, 0, .5);
+}
+
+
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://maxbee.github.io/post/css-rang-liu-lan-qi-de-gun-dong-tiao-yi-zhi-xian-shi/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://maxbee.github.io/post/wang-zhan-kuai-su-zhi-chi-zi-dong-qie-huan-an-hei-mo-shi-he-ri-chang-mo-shi/">
+                        网站快速支持自动切换暗黑模式和日常模式
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2019-11-20</time>
+                    
+                        <a href="https://maxbee.github.io/tag/front/" class="post-tag i-tag
+                            i-tag-other_3">
+            #前端
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            只需要在CSS添加以下代码即可：
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #444;
+    color: #e4e4e4;
+  }
+  a {
+    color: #e39777;
+  }
+  img {
+    filter: grayscale(30%);
+  }
+}
+
+支持Firefox, Safari, Chrome浏览器
+参考来源
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://maxbee.github.io/post/wang-zhan-kuai-su-zhi-chi-zi-dong-qie-huan-an-hei-mo-shi-he-ri-chang-mo-shi/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://maxbee.github.io/images/avatar.png?v=1714552861739)">
+        </div>
+        <h1 class="id_card-title">
+            
+        </h1>
+        <h2 class="id_card-description">
+            Never Complain
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+
+        </div>
+    </div>
+    
+
+                        <!-- 公告栏 -->
+                        
+    <div class="notice-card i-card ">
+        <div class="notice-title i-card-title">公告</div>
+        <div class="notice-content">
+            我的第一个APP上线啦，是一个记账应用，名字叫「金橘记账」，除了支持日常记账功能外，还支持股票、基金的收益自动盈亏功能等资产管理功能。可在AppStore、GoogleStore 中搜索，欢迎下载体验😁。
+第二个App 「记一杯」：奶茶、咖啡、饮品记录App
+        </div>
+    </div>
+    
+
+                </div>
+            </div>
+
+
+
+            <div class="site-footer">
+  2019 - 2024 @ Go.Me | 
+  <a class="rss" href="https://maxbee.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+</body>
+
+</html>

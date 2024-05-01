@@ -1,0 +1,271 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Telegram API 个人消息推送教程 | 
+</title>
+<link rel="shortcut icon" href="https://maxbee.github.io/favicon.ico?v=1714552861739">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://maxbee.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxbee.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164673086-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164673086-1');
+    </script>
+    
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
+
+                    
+                            
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://maxbee.github.io">
+                <img class="avatar" src="https://maxbee.github.io/images/avatar.png?v=1714552861739" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            Telegram API 个人消息推送教程
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2021-11-15</time>
+                            
+                        </div>
+                        
+                                <div class="post-content">
+                                    <p>首先通过Telegram应用搜索BotFather，发送一条 /new_bot ,或者直接点击@BotFather自动回复的/new_bot ,按照回复的指示输入机器人的名字和机器人ID即可获得一个token，这个token就是我们用来发送机器人消息的密钥，不要将这个密钥泄漏给其他人，不然别人能通过这个token控制你的机器人。</p>
+<p>接下来我们需要激活机器人。进入到你创建的机器人对话中，发送/star，然后通过调用下面👇这个API激活你的机器人。</p>
+<!-- more -->
+<pre><code>https://api.telegram.org/bot[TOKEN]/getUpdates
+</code></pre>
+<p>注意：[TOKEN]替换为你的机器人TOKEN</p>
+<p>激活之后会返回类似下面的响应数据，chat对象下的id字段就是我们机器人的聊天ID</p>
+<pre><code>{
+  &quot;ok&quot;: true,
+  &quot;result&quot;: [
+    {
+      &quot;update_id&quot;: 116206660,
+      &quot;message&quot;: {
+        &quot;message_id&quot;: 5,
+        &quot;from&quot;: {
+          &quot;id&quot;: 921535000,
+          &quot;is_bot&quot;: false,
+          &quot;first_name&quot;: &quot;Simone&quot;,
+          &quot;username&quot;: &quot;Duiker101&quot;,
+          &quot;language_code&quot;: &quot;en&quot;
+        },
+        &quot;chat&quot;: {
+          &quot;id&quot;: 921535000,
+          &quot;first_name&quot;: &quot;Simone&quot;,
+          &quot;username&quot;: &quot;Duiker101&quot;,
+          &quot;type&quot;: &quot;private&quot;
+        },
+        &quot;date&quot;: 1595283175,
+        &quot;text&quot;: &quot;/start&quot;,
+        &quot;entities&quot;: [
+          {
+            &quot;offset&quot;: 0,
+            &quot;length&quot;: 6,
+            &quot;type&quot;: &quot;bot_command&quot;
+          }
+        ]
+      }
+    }
+  ]
+}
+</code></pre>
+<p>知道机器人的聊天ID后我们就可以通过发送消息的API，给我们的机器人发送消息同通知了，下面的[TOKEN]和[CHAT_ID]替换为我们上文获取到的token和id，[你想发送的消息]则替换为你想发送的文本即可。走到这一步，打开你的telegeram 机器人就能看到你刚刚发送的消息了。ENJOY IT ！</p>
+<pre><code>https://api.telegram.org/bot[TOKEN]/sendMessage?chat_id=[CHAT_ID]&amp;text=[你想发送的消息]
+</code></pre>
+<p>顺便说下，这个是GET请求。</p>
+
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://maxbee.github.io/post/css-rang-liu-lan-qi-de-gun-dong-tiao-yi-zhi-xian-shi/">
+                                <h3 class="post-title">
+                                    css 让浏览器的滚动条一直显示
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                                <!-- id-card -->
+                                
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://maxbee.github.io/images/avatar.png?v=1714552861739)">
+        </div>
+        <h1 class="id_card-title">
+            
+        </h1>
+        <h2 class="id_card-description">
+            Never Complain
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+
+        </div>
+    </div>
+    
+                                    
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  2019 - 2024 @ Go.Me | 
+  <a class="rss" href="https://maxbee.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: 'df880d55293cde9f09cc',
+            clientSecret: 'da2634d486b31eb94cb1a11bcd4c1ea97b82995c',
+            repo: 'Maxbee.github.io',
+            owner: 'Maxbee',
+            admin: ['Maxbee'],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
+
+                    
+                                
+</body>
+
+</html>

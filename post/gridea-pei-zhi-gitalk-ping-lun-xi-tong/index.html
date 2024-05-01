@@ -1,0 +1,261 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Gridea配置Gitalk评论系统 | 
+</title>
+<link rel="shortcut icon" href="https://maxbee.github.io/favicon.ico?v=1714552861739">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://maxbee.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxbee.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164673086-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164673086-1');
+    </script>
+    
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
+
+                    
+                            
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://maxbee.github.io">
+                <img class="avatar" src="https://maxbee.github.io/images/avatar.png?v=1714552861739" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            Gridea配置Gitalk评论系统
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2020-04-27</time>
+                            
+                        </div>
+                        
+                                <div class="post-content">
+                                    <p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件，可以使用GitHub账号进行登录。</p>
+<p>Gridea官方文档中并没有对Gitalk评论进行配置对教程，搜索了一番把自己对小站支持了一番Gitalk。其实步骤很简单，不过在配置的过程中有一些我们需要注意的地方，话不多说，直接上教程。</p>
+<h3 id="第一步">第一步</h3>
+<p>首先，需要在GitHub账号设置里配置一个OAuth Application  <a href="https://github.com/settings/applications/new">地址点击这里</a> 如图：<br>
+<img src="https://maxbee.github.io/post-images/1587968143347.jpg" alt="" loading="lazy"></p>
+<h3 id="第二步">第二步</h3>
+<blockquote>
+<p>⚠️需要注意的是HomePage和Authorization callback URL需要填写https而不是http</p>
+</blockquote>
+<p>配置完成后，会获得<strong>Client ID</strong> 和<strong>Client Secret</strong>，打开Gridea远程设置中配置，如下图：<br>
+<img src="https://maxbee.github.io/post-images/1587968672034.jpg" alt="" loading="lazy"></p>
+<p>配置完成后保存并且把网站发布即可，发布后请用部署的地址访问网站而不是本地预览，否则会出现「<strong>未找到相关的 Issues 进行评论请联系 @_____ 初始化创建</strong>」的提示。还有一个原因是因为你的部署站点的Git仓库未打开issue，在仓库中把issue打开即可。（具体设置在仓库setting中设置）<br>
+<img src="https://maxbee.github.io/post-images/1587969053995.jpg" alt="" loading="lazy"></p>
+<p>如果还有不懂的地方，可以在下方的评论告诉我😋<br>
+当然也可以<strong>打赏</strong>我，或者下载我的App[金橘记账]，感恩<br>
+<img src="https://maxbee.github.io/post-images/1686819626976.JPG" alt="" loading="lazy"></p>
+
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://maxbee.github.io/post/jian-shen-san-da-she-ru-dan-bai-zhi-tan-shui-hua-he-wu-zhi-fang/">
+                                <h3 class="post-title">
+                                    健身三大摄入 -- 蛋白质、碳水化合物、脂肪 
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E6%AD%A5">第一步</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5">第二步</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
+    </div>
+    
+                            
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  2019 - 2024 @ Go.Me | 
+  <a class="rss" href="https://maxbee.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: 'df880d55293cde9f09cc',
+            clientSecret: 'da2634d486b31eb94cb1a11bcd4c1ea97b82995c',
+            repo: 'Maxbee.github.io',
+            owner: 'Maxbee',
+            admin: ['Maxbee'],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
+
+                    
+                                
+</body>
+
+</html>
